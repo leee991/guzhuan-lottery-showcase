@@ -3,7 +3,6 @@
  * 仅保留模块导出与接口签名。
  */
 
-
 const crypto = require('node:crypto');
 const fs = require('node:fs/promises');
 const path = require('node:path');
@@ -65,8 +64,3 @@ function csv(res, rows) {
   // 内部业务实现略
   throw new Error("not implemented");
 }
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /api/admin/ops/
-//   - /api/admin/ops/mfa/recover
-//   - /api/admin/ops/mfa/verify

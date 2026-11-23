@@ -1,7 +1,6 @@
 // 接口定义 — source/editorial.go
 // 仅保留数据结构与函数签名。
 
-
 package main
 
 

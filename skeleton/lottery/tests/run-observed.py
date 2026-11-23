@@ -3,7 +3,6 @@
 仅保留模块结构与导出签名。
 """
 
-
 import json
 import os
 from pathlib import Path
@@ -13,4 +12,4 @@ import time
 
 def sample():
     # 内部业务实现略
-    raise NotImplementedError("not implemented")
+    raise NotImplementedError('not implemented')

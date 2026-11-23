@@ -2,7 +2,6 @@
 // 仅保留数据结构与函数签名。
 
 
-
 package main
 
 func hostDisk(string) (uint64, uint64, bool)                 {

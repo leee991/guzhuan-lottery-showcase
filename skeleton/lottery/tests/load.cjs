@@ -3,7 +3,6 @@
  * 仅保留模块导出与接口签名。
  */
 
-
 const fs = require('node:fs');
 const crypto = require('node:crypto');
 const {performance} = require('node:perf_hooks');
@@ -33,8 +32,3 @@ async function main(){
   // 内部业务实现略
   throw new Error("not implemented");
 }
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /api/lottery
-//   - /api/me
-//   - /api/orders

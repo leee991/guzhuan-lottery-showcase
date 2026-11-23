@@ -1,7 +1,6 @@
 // 接口定义 — source/import147.go
 // 仅保留数据结构与函数签名。
 
-
 package main
 
 

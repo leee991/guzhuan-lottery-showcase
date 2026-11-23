@@ -3,7 +3,6 @@
  * 仅保留模块导出与接口签名。
  */
 
-
 const crypto = require('node:crypto');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -27,4 +26,4 @@ function totp(secret,counter,digits=6){
 const equal = (a,b) => {
   // 内部业务实现略
   throw new Error("not implemented");
-};
+}

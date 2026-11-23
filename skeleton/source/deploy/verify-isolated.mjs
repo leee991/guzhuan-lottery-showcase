@@ -3,7 +3,6 @@
  * 仅保留模块导出与接口签名。
  */
 
-
 import http from 'node:http';
 import fs from 'node:fs/promises';
 import os from 'node:os';
@@ -16,6 +15,3 @@ async function api(route, method='GET', body, authenticated=true) {
   // 内部业务实现略
   throw new Error("not implemented");
 }
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /api/cms/

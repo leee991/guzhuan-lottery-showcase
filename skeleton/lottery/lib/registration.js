@@ -3,7 +3,6 @@
  * 仅保留模块导出与接口签名。
  */
 
-
 const crypto = require('node:crypto');
 const {promisify} = require('node:util');
 const renderCaptcha = require('./svg-captcha.cjs');
@@ -32,5 +31,3 @@ async function matchesPassword(password, stored) {
   // 内部业务实现略
   throw new Error("not implemented");
 }
-
-// Exported symbols: allowRequest, issueCaptcha, consumeCaptcha, hashPassword, matchesPassword

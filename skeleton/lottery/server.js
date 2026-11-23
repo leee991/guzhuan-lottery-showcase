@@ -3,7 +3,6 @@
  * 仅保留模块导出与接口签名。
  */
 
-
 const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -228,28 +227,3 @@ async function autoGenerateLottery() {
   // 内部业务实现略
   throw new Error("not implemented");
 }
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /admin/index.html
-//   - /api/admin/
-//   - /api/admin/balance-adjustments
-//   - /api/admin/login
-//   - /api/admin/lottery
-//   - /api/admin/lottery/generate-today
-//   - /api/admin/lottery/random
-//   - /api/admin/orders
-//   - /api/admin/summary
-//   - /api/admin/users
-//   - /api/admin/withdrawals
-//   - /api/agent/team
-//   - /api/bank
-//   - /api/captcha
-//   - /api/login
-//   - /api/lottery
-//   - /api/me
-//   - /api/orders
-//   - /api/profile
-//   - /api/register
-//   - /api/transactions
-//   - /api/withdraw
-//   - /api/withdrawals

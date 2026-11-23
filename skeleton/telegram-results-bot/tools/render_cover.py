@@ -3,14 +3,11 @@
 仅保留模块结构与导出签名。
 """
 
-
 import math
 import os
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
-ROOT = Path(__file__).resolve().parents[1]
-FONT = os.environ.get('CJK_FONT', '/System/Library/Fonts/STHeiti Medium.ttc')
 
 def font(size):
     # 内部业务实现略
-    raise NotImplementedError("not implemented")
+    raise NotImplementedError('not implemented')
