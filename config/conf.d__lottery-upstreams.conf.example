@@ -1,0 +1,13 @@
+upstream lottery_node {
+    server 127.0.0.1:8080;
+    keepalive 32;
+    keepalive_requests 1000;
+    keepalive_timeout 60s;
+}
+
+upstream lottery_cms {
+    server 127.0.0.1:8092;
+    keepalive 32;
+    keepalive_requests 1000;
+    keepalive_timeout 60s;
+}

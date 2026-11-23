@@ -1,0 +1,16 @@
+{
+  "name": "course-assignment",
+  "version": "1.0.0",
+  "description": "Course website with serialized durable business APIs, PC/mobile interfaces and isolated performance verification.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/database.test.cjs tests/sqlite.test.cjs tests/draw-edit.test.cjs tests/order-shares.test.cjs tests/admin-security.test.cjs tests/admin-security-integration.test.cjs"
+  },
+  "keywords": [
+    "coursework",
+    "website"
+  ],
+  "private": true,
+  "license": "SEE LICENSE IN THIRD_PARTY.md"
+}

@@ -1,0 +1,24 @@
+[Unit]
+Description=Telegram historical results query bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=resultsbot
+Group=resultsbot
+WorkingDirectory=/opt/telegram-results-bot
+EnvironmentFile=/etc/telegram-results-bot.env
+ExecStart=/usr/bin/python3 /opt/telegram-results-bot/bot.py --db /var/lib/telegram-results-bot/results.sqlite3
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=45
+StateDirectory=telegram-results-bot
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target
